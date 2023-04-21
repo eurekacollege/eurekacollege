@@ -1,0 +1,50 @@
+@import "@/styles/Breakpoint.module.sass"
+
+.button1
+    background-color: #248024
+    border-radius: 10px
+    border: none
+    color: #fff
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5)
+    transition: transform 0.3s ease-in-out
+    font-weight: bold
+
+.button1:hover
+    transform: scale(1.1)
+
+.button2
+    background-color: #FFBD59
+    border-radius: 10px
+    border: none
+    color: #2E4F0C
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5)
+    transition: transform 0.3s ease-in-out
+    font-weight: bold
+
+.button2:hover
+    transform: scale(1.1)
+
+@include desktop
+    .button1
+    //     width: 280px
+    //     height: 50px
+        // padding-left: 2%
+        // padding-right: 1%
+
+
+    
+    .button2
+        // padding-left: 2%
+        // padding-right: %
+    //     width: 280px
+    //     height: 50px
+
+@include extra-large
+    // .button1
+    //     width: 380px
+    //     height: 60px
+
+    
+    // .button2
+    //     width: 380px
+    //     height: 60px

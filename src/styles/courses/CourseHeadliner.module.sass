@@ -1,0 +1,53 @@
+@import "@/styles/Breakpoint.module.sass"
+
+.mainHeadliner
+    background: url("/images/courseheadliner.png") no-repeat
+    background-size: 100% 105%
+    font-family: 'Inria Sans', sans-serif
+    font-weight: bold
+    height: 60vh
+
+.word1
+    color: #FEFAE0
+    -webkit-text-stroke: 1px #FFFFFF
+    text-stroke: 1px #FFFFFF
+    text-align: center
+
+.word2
+    padding-top: 3%
+    color: #FEFAE0
+    -webkit-text-stroke: 1px #766B6B
+    text-stroke: 1px #766B6B
+
+@include desktop
+    .mainHeadliner
+        width: 100%
+        // font-size: 3rem
+        padding-top: 20%
+        padding-left: 5%
+        .word1
+            font-size: 3rem
+        .word2
+            font-size: 2rem
+    .wordContainer
+        padding-top: 7%
+        padding-left: 12%
+        padding-right: 12%
+        // border: 3px solid black
+
+
+@include extra-large
+    .mainHeadliner
+        width: 100%
+        // font-size: 3rem
+        padding-top: 7%
+        padding-left: 5%
+        .word1
+            font-size: 4rem
+        .word2
+            font-size: 3rem
+    .wordContainer
+        padding-top: 7%
+        padding-left: 12%
+        padding-right: 12%
+        // border: 3px solid black

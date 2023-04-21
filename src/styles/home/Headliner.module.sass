@@ -1,0 +1,54 @@
+@import "@/styles/Breakpoint.module.sass"
+
+.mainHeadliner
+    background: url("/images/headliner.png") no-repeat
+    background-position: 40% 60%
+    background-size: cover
+    font-family: 'Inria Sans', sans-serif
+    font-weight: bold
+
+.word1
+    color: #2E4F0C
+
+.word2
+    color: #766B6B
+
+.but1
+    margin-right: 30px
+
+
+@include desktop
+    .mainHeadliner
+        width: 100%
+        font-size: 4rem
+        padding-top: 8%
+        padding-left: 5%
+        height: 50vh
+    
+    .but1
+        font-size: 1.5rem
+        width: 280px
+        height: 50px
+    
+    .but2
+        font-size: 1.5rem
+        width: 280px
+        height: 50px
+
+@include extra-large
+    .mainHeadliner
+        width: 100%
+        font-size: 5rem
+        padding-top: 8%
+        padding-left: 5%
+        height: 60vh
+
+    .but1
+        font-size: 2rem
+        width: 380px
+        height: 60px
+    
+    .but2
+        font-size: 2rem
+        width: 380px
+        height: 60px

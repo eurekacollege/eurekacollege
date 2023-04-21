@@ -1,0 +1,55 @@
+@import "@/styles/Breakpoint.module.sass"
+
+.header
+    font-family: 'Inria Sans', sans-serif
+    font-weight: bold
+    background: #FFBD59
+    color: #2E4F0C
+
+.certContainer
+    font-family: 'Inria Sans', sans-serif
+    font-weight: bold
+    color: #2E4F0C
+    p
+        padding-bottom: 2%
+    .certContact
+        padding-top: 2%
+        color: #766B6B
+    .certContact1
+        padding-top: 0%
+        color: #766B6B
+
+
+@include desktop
+    .header
+        // border: 3px solid black
+        height: 80px
+        font-size: 2.5rem
+        padding-left: 5%
+        padding-top: 1%
+    .certContainer
+        font-size: 1.5rem
+        padding-left: 12%
+        padding-top: 3%
+        letter-spacing: .05em
+        .certContact
+            font-size: 1.3rem
+        .certContact1
+            font-size: 1.3rem
+
+@include extra-large
+    .header
+        // border: 3px solid black
+        height: 80px
+        font-size: 2.5rem
+        padding-left: 5%
+        padding-top: 1%
+    .certContainer
+        font-size: 2.5rem
+        padding-left: 12%
+        padding-top: 3%
+        letter-spacing: .05em
+        .certContact
+            font-size: 2rem
+        .certContact1
+            font-size: 2rem

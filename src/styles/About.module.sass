@@ -1,0 +1,90 @@
+@import "@/styles/Breakpoint.module.sass"
+
+
+.aboutContainer
+    font-family: 'Inria Sans', sans-serif
+    padding-top: 3%
+    .aboutHeader
+        color: #2E4F0C
+        font-weight: bold
+    .aboutInfo
+        color: #4A4B4A
+        font-weight: lighter
+        letter-spacing: 0.05em
+        text-align: justify
+    .link2
+        color: #2E4F0C
+        text-decoration: none
+        font-weight: bold
+    .link1
+        color: #2E4F0C
+        font-style: italic
+        font-weight: bold
+        text-decoration: none
+
+@include desktop
+    .aboutContainer
+        display: flex
+        flex-direction: column
+        padding-left: 10%
+        // padding-right: 4%
+        padding-right: 10%
+        img
+            padding-top: 3%
+            padding-bottom: 3%
+            width: 100%
+            height: 500px
+
+    
+    .aboutHeader
+        font-size: 2.5rem
+
+    .aboutInfo
+        padding-left: 4.5%
+        font-size: 1.5rem
+        padding-top: 3%
+
+    .subContainer
+        display: flex
+        flex-direction: column
+
+        padding-top: 3%
+    
+    .link2
+        align-self: flex-end
+        font-size: 1.5rem
+        padding-top: 5%
+
+@include extra-large
+    .aboutContainer
+        display: flex
+        flex-direction: column
+        padding-left: 10%
+        // padding-right: 4%
+        padding-right: 10%
+        img
+            padding-top: 3%
+            padding-bottom: 3%
+            width: 100%
+            height: 700px
+
+    
+    .aboutHeader
+        font-size: 3rem
+
+    .aboutInfo
+        padding-left: 4.5%
+        font-size: 2rem
+        padding-top: 3%
+
+    .subContainer
+        display: flex
+        flex-direction: column
+
+        padding-top: 3%
+    
+    .link2
+        align-self: flex-end
+        font-size: 1.5rem
+        padding-top: 5%
+

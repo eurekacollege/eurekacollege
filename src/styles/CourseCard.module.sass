@@ -1,0 +1,70 @@
+@import "@/styles/Breakpoint.module.sass"
+
+.cardContainer
+    display: flex
+
+
+.card
+    display: flex
+
+.cardInfo
+    text-align: justify
+
+@include desktop
+    .cardContainer
+        flex-direction: column
+    
+    .card
+        justify-content: space-around
+        gap: 5%
+
+    .cardImage
+        width: 50%
+        // border: 3px solid black
+
+    
+    .cardInfo
+        width: 50%
+        padding-right: 10%
+    
+    .cardButton
+        align-self: flex-end
+        padding-right: 10%
+        text-align: center
+        padding-top: 3%
+        // border: 3px solid black
+    
+    // .button
+    //     font-size: 1.5rem
+    //     width: 400px
+    //     height: 70px
+
+
+@include extra-large
+    .cardContainer
+        flex-direction: column
+    
+    .card
+        justify-content: space-around
+        gap: 5%
+
+    .cardImage
+        width: 50%
+        // border: 3px solid black
+
+    
+    .cardInfo
+        width: 50%
+        padding-right: 10%
+    
+    .cardButton
+        align-self: flex-end
+        padding-right: 10%
+        text-align: center
+        padding-top: 3%
+        // border: 3px solid black
+    
+    // .button
+    //     font-size: 2rem
+    //     width: 700px
+    //     height: 70px

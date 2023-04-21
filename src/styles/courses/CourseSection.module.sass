@@ -1,0 +1,70 @@
+@import "@/styles/Breakpoint.module.sass"
+
+.container
+    display: flex
+
+.cardBox
+    display: flex
+    p
+        font-family: 'Inria Sans', sans-serif
+    .paragraph
+        color: #4A4B4A
+        letter-spacing: 0.05em
+        
+    ul
+        padding-top: 2%
+        color: #4A4B4A
+        font-family: 'Inria Sans', sans-serif
+    li
+        padding: 0.5%
+        letter-spacing: 0.05em
+    
+.cardHeader
+    color: #2E4F0C
+    font-weight: bold
+    padding-top: 3%
+    padding-bottom: 2%
+
+@include desktop
+    .container
+        flex-direction: column
+    
+    .cardBox
+        flex-direction: column
+        // border: 3px solid black
+        .paragraph
+            font-size: 1.5rem
+        ul
+            margin-left: 7%
+            font-size: 1.8rem
+    
+    .cardHeader
+        font-size: 2rem
+        padding-left: 10%
+    .cardImage
+        width: 50%
+        height: 80%
+        margin-left: 20%
+        // border: 3px solid black
+
+@include extra-large
+    .container
+        flex-direction: column
+    
+    .cardBox
+        flex-direction: column
+        // border: 3px solid black
+        .paragraph
+            font-size: 2rem
+        ul
+            margin-left: 7%
+            font-size: 1.8rem
+    
+    .cardHeader
+        font-size: 3rem
+        padding-left: 10%
+    .cardImage
+        width: 50%
+        height: 80%
+        margin-left: 20%
+        // border: 3px solid black
