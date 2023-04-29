@@ -1,0 +1,240 @@
+@import "@/styles/Breakpoint.module.sass"
+
+.header
+    font-family: 'Inria Sans', sans-serif
+    font-weight: bold
+    background: #FFBD59
+    color: $dark-green
+
+.certContainer
+    font-family: 'Inria Sans', sans-serif
+    font-weight: bold
+    color: $dark-green
+    p
+        padding-bottom: 2%
+    .certContact
+        padding-top: 2%
+        color: #766B6B
+    .certContact1
+        padding-top: 0%
+        color: #766B6B
+
+@include phone
+    .header
+        // height: 80px
+        font-size: 1rem
+        padding-left: 5%
+        padding-top: 2%
+        padding-bottom: 2%
+    .certContainer
+        font-size: .8rem
+        padding-left: 10%
+        padding-right: 10%
+        padding-top: 10%
+        padding-bottom: 10%
+        letter-spacing: .05em
+        line-height: 1.5
+        .certContact
+            padding-top: 5%
+            font-size: .8rem
+        .certContact1
+            font-size: .8rem
+    
+@include large-phone
+    .header
+        // height: 80px
+        font-size: 1.2rem
+        padding-left: 5%
+        padding-top: 2%
+        padding-bottom: 2%
+    .certContainer
+        font-size: 1rem
+        padding-left: 10%
+        padding-right: 10%
+        padding-top: 10%
+        padding-bottom: 10%
+        letter-spacing: .05em
+        line-height: 1.5
+        .certContact
+            padding-top: 5%
+            font-size: 1rem
+        .certContact1
+            font-size: 1rem
+        
+@include tablet
+    .header
+        // height: 80px
+        font-size: 1.5rem
+        padding-left: 5%
+        padding-top: 2%
+        padding-bottom: 2%
+    .certContainer
+        font-size: 1.2rem
+        padding-left: 10%
+        padding-right: 10%
+        padding-top: 10%
+        padding-bottom: 10%
+        letter-spacing: .05em
+        line-height: 1.5
+        .certContact
+            padding-top: 5%
+            font-size: 1.2rem
+        .certContact1
+            font-size: 1.2rem
+
+@include laptop
+    .header
+        // height: 80px
+        font-size: 2rem
+        padding-left: 5%
+        padding-top: 2%
+        padding-bottom: 2%
+    .certContainer
+        font-size: 1.2rem
+        padding-left: 10%
+        padding-right: 10%
+        padding-top: 10%
+        padding-bottom: 10%
+        letter-spacing: .05em
+        line-height: 1.5
+        .certContact
+            padding-top: 5%
+            font-size: 1.2rem
+        .certContact1
+            font-size: 1.2rem
+
+@include desktop
+    .header
+        // height: 80px
+        font-size: 2.5rem
+        padding-left: 5%
+        padding-top: 2%
+        padding-bottom: 2%
+    .certContainer
+        font-size: 1.2rem
+        padding-left: 10%
+        padding-right: 10%
+        padding-top: 5%
+        padding-bottom: 5%
+        letter-spacing: .05em
+        line-height: 1.5
+        .certContact
+            padding-top: 3%
+            font-size: 1.2rem
+        .certContact1
+            font-size: 1.2rem
+
+@include large
+    .header
+        // height: 80px
+        font-size: 3rem
+        padding-left: 5%
+        padding-top: 2%
+        padding-bottom: 2%
+    .certContainer
+        font-size: 1.5rem
+        padding-left: 10%
+        padding-right: 10%
+        padding-top: 5%
+        padding-bottom: 5%
+        letter-spacing: .05em
+        line-height: 1.5
+        .certContact
+            padding-top: 3%
+            font-size: 1.5rem
+        .certContact1
+            font-size: 1.5rem
+    
+@include extra-large
+    .header
+        // height: 80px
+        font-size: 3.5rem
+        padding-left: 5%
+        padding-top: 2%
+        padding-bottom: 2%
+    .certContainer
+        font-size: 2rem
+        padding-left: 10%
+        padding-right: 10%
+        padding-top: 5%
+        padding-bottom: 5%
+        letter-spacing: .05em
+        line-height: 1.5
+        .certContact
+            padding-top: 3%
+            font-size: 2rem
+        .certContact1
+            font-size: 2rem
+
+@include extra-extra-large
+    .header
+        // height: 80px
+        font-size: 6rem
+        padding-left: 5%
+        padding-top: 2%
+        padding-bottom: 2%
+    .certContainer
+        font-size: 3rem
+        padding-left: 10%
+        padding-right: 10%
+        padding-top: 5%
+        padding-bottom: 5%
+        letter-spacing: .05em
+        line-height: 1.5
+        .certContact
+            padding-top: 3%
+            font-size: 3rem
+        .certContact1
+            font-size: 3rem
+
+
+// @include desktop
+//     .header
+//         // border: 3px solid black
+//         height: 80px
+//         font-size: 2.5rem
+//         padding-left: 5%
+//         padding-top: 1%
+//     .certContainer
+//         font-size: 1.5rem
+//         padding-left: 12%
+//         padding-top: 3%
+//         letter-spacing: .05em
+//         .certContact
+//             font-size: 1.3rem
+//         .certContact1
+//             font-size: 1.3rem
+
+// @include large
+//     .header
+//         // border: 3px solid black
+//         height: 5rem
+//         font-size: 2.25rem
+//         padding-left: 5%
+//         padding-top: 1%
+//     .certContainer
+//         font-size: 2rem
+//         padding-left: 12%
+//         padding-top: 3%
+//         letter-spacing: .05em
+//         .certContact
+//             font-size: 1.5rem
+//         .certContact1
+//             font-size: 1.5rem
+
+// @include extra-large
+//     .header
+//         // border: 3px solid black
+//         height: 80px
+//         font-size: 2.5rem
+//         padding-left: 5%
+//         padding-top: 1%
+//     .certContainer
+//         font-size: 2.5rem
+//         padding-left: 12%
+//         padding-top: 3%
+//         letter-spacing: .05em
+//         .certContact
+//             font-size: 2rem
+//         .certContact1
+//             font-size: 2rem

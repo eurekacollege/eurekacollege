@@ -1,0 +1,475 @@
+@import "@/styles/Breakpoint.module.sass"
+
+.mainNav
+    background: $green
+    font-family: 'Inria Sans', sans-serif
+    // padding-right: 5%
+    .navMain
+        .toggle
+            // color: #fff
+            // border: 1px solid #fff
+            border: 1px solid #000
+            margin-right: 5%
+            background-color: transparent
+        .collapsed
+            // height: 50rem
+            padding-right: 2%
+            .navContainer
+                padding-left: 8%
+        .customNavLink
+            color: #fff
+            font-weight: bold
+            &:hover
+                color: $yellow
+
+    // .subNav2_b
+    //     a
+    //         text-decoration: none
+    //         color: white
+    //     a:hover
+    //         color: #FFBD59
+
+@include phone
+    .mainNav
+
+    .navMain
+        .navHolder
+        img
+            width: 100%
+            height: 20vw
+        .navContainer
+            .customNavLink
+                font-size: 4vw
+        .ptib
+            display: none
+        .toggle
+            margin-right: 0
+
+@include large-phone
+    .mainNav
+
+    .navMain
+        .navHolder
+        img
+            width: 100%
+            height: 15vw
+        .navContainer
+            .customNavLink
+                font-size: 4vw
+        .ptib
+            display: none
+        .toggle
+            margin-right: 0
+
+@include tablet
+    .mainNav
+
+    .navMain
+        img
+            width: 100%
+            height: 12vw
+        .collapsed
+            // display: flex
+            // flex-direction: column
+            // justify-content: flex-end
+            .navContainer
+                .customNavLink
+                    font-size: 3vw
+        .ptib
+            display: none
+        .toggle
+            margin-right: 0
+
+@include laptop
+    .mainNav
+
+    .navMain
+        img
+            width: 100%
+            height: 10vw
+        .collapsed
+            // display: flex
+            // flex-direction: column
+            // justify-content: flex-end
+            .navContainer
+                .customNavLink
+                    font-size: 1.5vw
+        .ptib
+            display: none
+        .toggle
+            margin-right: 0
+
+@include desktop
+    .mainNav
+
+    .navMain
+        img
+            width: 100%
+            height: 8vw
+        .collapsed
+            display: flex
+            // flex-direction: column
+            justify-content: flex-end
+            .navContainer
+                .customNavItem
+                    // margin-right: 10px
+                    .customNavLink
+                        font-size: 1.5vw
+                        &:not(:last-child)
+                            // padding-right: 2%
+        .ptib
+            display: none
+        .toggle
+            margin-right: 0
+
+@include large
+    .mainNav
+
+    .navMain
+        img
+            width: 100%
+            height: 6vw
+        .collapsed
+            display: flex
+            // flex-direction: column
+            justify-content: flex-end
+            .navContainer
+                .customNavItem
+                    margin-right: 20px
+                    .customNavLink
+                        font-size: 1.4vw
+                        &:not(:last-child)
+                            // padding-right: 2%
+        .ptib
+            display: none
+        .toggle
+            margin-right: 0
+
+@include extra-large
+    .mainNav
+
+    .navMain
+        img
+            width: 100%
+            height: 6vw
+        .collapsed
+            display: flex
+            // flex-direction: column
+            justify-content: flex-end
+            .navContainer
+                // display: flex
+                // gap: 5%
+                .customNavItem
+                    margin-right: 20px
+                    .customNavLink
+                        font-size: 1.4vw
+                        &:not(:last-child)
+                            // padding-right: 2%
+        .ptib
+            display: none
+        .toggle
+            margin-right: 0
+
+@include extra-extra-large
+    .mainNav
+
+    .navMain
+        img
+            width: 100%
+            height: 10vh
+        .collapsed
+            display: flex
+            // flex-direction: column
+            justify-content: flex-end
+            .navContainer
+                // display: flex
+                // gap: 5%
+                .customNavItem
+                    margin-right: 50px
+                    .customNavLink
+                        font-size: 2.5rem
+                        &:not(:last-child)
+                            // padding-right: 2%
+        .ptib
+            display: none
+        .toggle
+            margin-right: 0
+
+
+// @include laptop
+//     .mainNav
+
+//     .navMain
+//         img
+//             width: 100%
+//             height: 10vh
+//         .collapsed
+//             display: flex
+//             justify-content: flex-end
+//             .navContainer
+//                 // display: flex
+//                 // text-align: right
+//                 // align-items: flex-end
+//                 .customNavLink
+//                     font-size: 1rem
+//         .ptib
+//             display: none
+//         .toggle
+//             margin-right: 0
+        
+//     // .toggle
+//     //     margin-right: 5%
+//     //     // border: none
+
+//     // .collapse
+//     //     padding-left: 6%
+
+// @include desktop
+//     .mainNav
+
+//     .navMain
+//         img
+//             width: 100%
+//             height: 10vh
+//         .navContainer
+//             .customNavLink
+//                 font-size: 1.7vw
+//         .ptib
+//             display: none
+//         .toggle
+//             margin-right: 0
+
+// @include large
+//     .mainNav
+
+//     .navMain
+//         img
+//             width: 100%
+//             height: 10vh
+//         .navContainer
+//             .customNavLink
+//                 font-size: 1.7vw
+//         .ptib
+//             display: none
+//         .toggle
+//             margin-right: 0
+
+// @include extra-large
+//     .mainNav
+//         // display: flex
+//         // flex-direction: column
+//     .navMain
+//         display: flex
+//         justify-content: space-between
+//         // flex-direction: column
+//         .navController
+//             display: flex
+//             flex-direction: column
+//             .navContainer
+//                 // display: flex
+//                 // align-items: flex-end
+//                 // gap: 10%
+//                 // align-self: flex-end
+//                 // width: 90rem
+//                 a
+//                     // padding-right: 5%
+//             .ptib
+//                 align-self: flex-end
+//             .collapsed
+//                 align-self: flex-end
+//                 // background: white
+//                 // display: flex
+//                 // justify-content: flex-end
+//     .customNavLink
+//         font-size: 1.5rem
+//         &:not(:last-child)
+//             margin-right: 2rem
+
+// @include extra-extra-large
+//     .mainNav
+//         // display: flex
+//         // flex-direction: column
+//     .navMain
+//         display: flex
+//         justify-content: space-between
+//         // flex-direction: column
+//         .navController
+//             display: flex
+//             flex-direction: column
+//             .navContainer
+//                 // display: flex
+//                 // align-items: flex-end
+//                 // gap: 10%
+//                 // align-self: flex-end
+//                 // width: 90rem
+//                 a
+//                     // padding-right: 5%
+//             .ptib
+//                 align-self: flex-end
+//             .collapsed
+//                 align-self: flex-end
+//                 // background: white
+//                 // display: flex
+//                 // justify-content: flex-end
+//     .customNavLink
+//         font-size: 1.7rem
+//         &:not(:last-child)
+//             margin-right: 2rem
+
+
+// @include tablet
+//     .mainNav
+//         display: flex
+//         // border: 3px solid black
+//         height: 100px
+//         width: auto
+//         background-size: cover
+//         img
+//             width: 80%
+//             height: 100%
+//             // border: 3px solid black
+//         .subNav1
+//             width: 20%
+//             // border: 3px solid black
+
+//         .subNav2
+//             width: 80%
+//             display: flex
+//             flex-direction: column
+//             justify-content: center
+//             // border: 3px solid black
+//             .subNav2_b
+//                 display: flex
+//                 justify-content: flex-end
+//                 gap: 25px
+//                 margin-right: 40px
+//                 // border: 3px solid black
+//                 a
+//                     font-size: .7rem
+
+// @include laptop
+//     .mainNav
+//         display: flex
+//         // border: 3px solid black
+//         height: 100px
+//         width: auto
+//         background-size: cover
+//         img
+//             width: 80%
+//             height: 100%
+//             // border: 3px solid black
+//         .subNav1
+//             width: 20%
+//             // border: 3px solid black
+
+//         .subNav2
+//             width: 80%
+//             display: flex
+//             flex-direction: column
+//             justify-content: center
+//             // border: 3px solid black
+//             .subNav2_b
+//                 display: flex
+//                 justify-content: flex-end
+//                 gap: 60px
+//                 margin-right: 40px
+//                 // border: 3px solid black
+//                 a
+//                     font-size: .8rem
+
+// @include desktop
+//     .mainNav
+//         display: flex
+//         // border: 3px solid black
+//         height: 100px
+//         width: auto
+//         background-size: cover
+//         img
+//             width: 80%
+//             height: 100%
+//             // border: 3px solid black
+    
+//     .subNav1
+//         width: 20%
+//         // border: 3px solid black
+
+//     .subNav2
+//         width: 80%
+//         display: flex
+//         flex-direction: column
+//         justify-content: center
+//         // border: 3px solid black
+//         .subNav2_b
+//             display: flex
+//             justify-content: flex-end
+//             gap: 60px
+//             margin-right: 40px
+//             // border: 3px solid black
+//             a
+//                 font-size: 1.2rem
+
+
+// @include large
+//     .mainNav
+//         display: flex
+//         // border: 3px solid black
+//         height: 8rem
+//         width: auto
+//         background-size: cover
+//         img
+//             width: 80%
+//             height: 100%
+//             // border: 3px solid black
+    
+//     .subNav1
+//         width: 20%
+//         // border: 3px solid black
+
+//     .subNav2
+//         width: 80%
+//         display: flex
+//         flex-direction: column
+//         justify-content: center
+//         // border: 3px solid black
+//         .subNav2_b
+//             display: flex
+//             justify-content: flex-end
+//             gap: 60px
+//             margin-right: 40px
+//             // border: 3px solid black
+//             a
+//                 font-size: 1.5rem
+
+
+    
+// @include extra-large
+//     .mainNav
+//         display: flex
+//         // border: 3px solid black
+//         height: 10rem
+//         width: auto
+//         background-size: cover
+//         img
+//             width: 80%
+//             height: 100%
+//             // border: 3px solid black
+    
+//     .subNav1
+//         width: 20%
+//         // border: 3px solid black
+
+//     .subNav2
+//         width: 80%
+//         display: flex
+//         flex-direction: column
+//         justify-content: center
+//         // border: 3px solid black
+//         .subNav2_b
+//             display: flex
+//             justify-content: flex-end
+//             gap: 60px
+//             margin-right: 40px
+//             // border: 3px solid black
+//             a
+//                 font-size: 2rem
+

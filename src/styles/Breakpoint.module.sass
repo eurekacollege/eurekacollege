@@ -1,0 +1,42 @@
+// @mixin phone
+// 	@media only screen and (min-width: 280px) and (max-width: 330px) 
+// 		@content
+@mixin phone
+	@media only screen and (max-width: 330px) 
+		@content
+		
+@mixin large-phone 
+	@media only screen and (min-width: 331px) and (max-width: 500px) 
+		@content
+
+@mixin tablet
+	@media only screen and (min-width: 501px) and (max-width: 767px)
+		@content
+
+@mixin laptop
+	@media only screen and (min-width: 768px) and (max-width: 1023px)
+		@content
+
+@mixin desktop
+	@media only screen and (min-width: 1024px) and (max-width: 1439px)
+		@content
+
+@mixin large
+	@media only screen and (min-width: 1440px) and (max-width: 1919px)
+		@content
+
+@mixin extra-large 
+	@media only screen and (min-width: 1920px) and (max-width: 3000px) 
+		@content
+
+@mixin extra-extra-large
+	@media only screen and (min-width: 3001px)
+		@content
+
+$dark-green: #2E4F0C
+$green: #248024
+$yellow: #FFBD59
+$semi-white: #FEFAE0
+
+
+

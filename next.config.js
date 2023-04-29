@@ -4,3 +4,11 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+// const nextConfig = {
+//   reactStrictMode: true,
+//   images: {
+//     fileExtensions: ['jpg', 'jpeg', 'png', 'gif', 'mp4'],
+//   },
+// };
+
+// module.exports = nextConfig;

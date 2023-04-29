@@ -1,0 +1,355 @@
+@import "@/styles/Breakpoint.module.sass"
+
+.cardContainer
+    display: flex
+
+.card
+    display: flex
+
+.cardInfo
+    text-align: justify
+
+.cardButton
+    a
+        text-decoration: none
+        color: #EFFCE3
+
+@include phone
+    .cardContainer
+        flex-direction: column
+        .card
+            flex-direction: column
+            justify-content: space-around
+            gap: 5%
+            .cardImage
+            .cardInfo
+                text-align: left
+                padding-right: 10%
+                padding-left: 10%
+                padding-top: 5%
+                padding-bottom: 5%
+        .cardButton
+            align-self: center
+            text-align: center
+            padding-top: 3%
+            width: 13rem
+            // font-size: .7rem
+
+@include large-phone
+    .cardContainer
+        flex-direction: column
+        .card
+            flex-direction: column
+            justify-content: space-around
+            gap: 5%
+            .cardImage
+            .cardInfo
+                text-align: left
+                padding-right: 10%
+                padding-left: 10%
+                padding-top: 5%
+                padding-bottom: 5%
+        .cardButton
+            align-self: flex-end
+            padding-right: 10%
+            text-align: center
+            padding-top: 3%
+            width: 16rem
+            // font-size: 1rem
+
+@include tablet
+    .cardContainer
+        flex-direction: column
+        .card
+            flex-direction: column
+            justify-content: space-around
+            .cardImage
+            .cardInfo
+                text-align: left
+                padding-right: 10%
+                padding-left: 10%
+                padding-top: 5%
+                padding-bottom: 3%
+        .cardButton
+            align-self: flex-end
+            padding-right: 10%
+            text-align: center
+            width: 23rem
+            // font-size: 1.2rem
+
+@include laptop
+    // .cardContainer
+    //     flex-direction: column
+    //     .card
+    //         justify-content: space-around
+    //         gap: 5%
+    //         .cardImage
+    //             width: 50%
+    //         .cardInfo
+    //             width: 50%
+    //             padding-right: 10%
+    //     .cardButton
+    //         align-self: flex-end
+    //         padding-right: 10%
+    //         text-align: center
+    //         padding-top: 3%
+    //         width: 27rem
+    //         // font-size: 115rem
+    .cardContainer
+        flex-direction: column
+        .card
+            flex-direction: column
+            justify-content: space-around
+            .cardImage
+                text-align: center
+            .cardInfo
+                text-align: left
+                padding-right: 10%
+                padding-left: 10%
+                padding-top: 5%
+                padding-bottom: 3%
+        .cardButton
+            align-self: flex-end
+            padding-right: 10%
+            text-align: center
+            width: 28rem
+            // font-size: 1.2rem
+
+@include desktop
+    .cardContainer
+        flex-direction: column
+        .card
+            justify-content: space-around
+            gap: 5%
+            .cardImage
+                width: 50%
+            .cardInfo
+                width: 50%
+                padding-right: 10%
+        .cardButton
+            align-self: flex-end
+            padding-right: 10%
+            text-align: center
+            padding-top: 3%
+            width: 33rem
+
+@include large
+    .cardContainer
+        flex-direction: column
+        .card
+            justify-content: space-around
+            gap: 5%
+            .cardImage
+                width: 50%
+            .cardInfo
+                width: 50%
+                padding-right: 10%
+        .cardButton
+            align-self: flex-end
+            padding-right: 10%
+            text-align: center
+            padding-top: 3%
+            width: 45rem
+
+@include extra-large
+    .cardContainer
+        flex-direction: column
+        .card
+            justify-content: space-around
+            gap: 5%
+            .cardImage
+                width: 50%
+                height: auto
+            .cardInfo
+                width: 50%
+                padding-right: 10%
+        .cardButton
+            align-self: flex-end
+            padding-right: 10%
+            text-align: center
+            padding-top: 3%
+            width: 50rem
+
+@include extra-extra-large
+    .cardContainer
+        flex-direction: column
+        .card
+            justify-content: space-around
+            gap: 5%
+            .cardImage
+                width: 50%
+            .cardInfo
+                width: 50%
+                padding-right: 10%
+        .cardButton
+            align-self: flex-end
+            padding-right: 10%
+            text-align: center
+            padding-top: 3%
+            width: 75rem
+
+// @include phone
+//     .cardContainer
+//         flex-direction: column
+    
+//     .card
+//         justify-content: space-around
+//         gap: 5%
+
+//     .cardImage
+//         width: 50%
+//         // border: 3px solid black
+
+//     .cardInfo
+//         width: 50%
+//         padding-right: 10%
+    
+//     .cardButton
+//         align-self: flex-end
+//         padding-right: 10%
+//         text-align: center
+//         padding-top: 3%
+//         // border: 3px solid black
+    
+//     // .button
+//     //     font-size: 1.5rem
+//     //     width: 400px
+//     //     height: 70px
+
+// @include tablet
+//     .cardContainer
+//         flex-direction: column
+    
+//     .card
+//         justify-content: space-around
+//         gap: 5%
+
+//     .cardImage
+//         width: 50%
+//         // border: 3px solid black
+
+//     .cardInfo
+//         width: 50%
+//         padding-right: 10%
+    
+//     .cardButton
+//         align-self: flex-end
+//         padding-right: 10%
+//         text-align: center
+//         padding-top: 3%
+//         // border: 3px solid black
+    
+//     // .button
+//     //     font-size: 1.5rem
+//     //     width: 400px
+//     //     height: 70px
+
+// @include laptop
+//     .cardContainer
+//         flex-direction: column
+    
+//     .card
+//         justify-content: space-around
+//         gap: 5%
+
+//     .cardImage
+//         width: 50%
+//         // border: 3px solid black
+
+//     .cardInfo
+//         width: 50%
+//         padding-right: 10%
+    
+//     .cardButton
+//         align-self: flex-end
+//         padding-right: 10%
+//         text-align: center
+//         padding-top: 3%
+//         // border: 3px solid black
+    
+//     // .button
+//     //     font-size: 1.5rem
+//     //     width: 400px
+//     //     height: 70px
+
+// @include desktop
+//     .cardContainer
+//         flex-direction: column
+    
+//     .card
+//         justify-content: space-around
+//         gap: 5%
+
+//     .cardImage
+//         width: 50%
+//         // border: 3px solid black
+
+//     .cardInfo
+//         width: 50%
+//         padding-right: 10%
+    
+//     .cardButton
+//         align-self: flex-end
+//         padding-right: 10%
+//         text-align: center
+//         padding-top: 3%
+//         // border: 3px solid black
+    
+//     // .button
+//     //     font-size: 1.5rem
+//     //     width: 400px
+//     //     height: 70px
+
+// @include large
+//     .cardContainer
+//         flex-direction: column
+    
+//     .card
+//         justify-content: space-around
+//         gap: 5%
+
+//     .cardImage
+//         width: 50rem
+//         height: 28rem
+//         // border: 3px solid black
+
+//     .cardInfo
+//         width: 50%
+//         padding-right: 10%
+    
+//     .cardButton
+//         align-self: flex-end
+//         padding-right: 10%
+//         text-align: center
+//         padding-top: 3%
+
+
+// @include extra-large
+//     .cardContainer
+//         flex-direction: column
+    
+//     .card
+//         justify-content: space-around
+//         gap: 5%
+
+//     .cardImage
+//         width: 50%
+//         // height: 40%
+//         // border: 3px solid black
+
+    
+//     .cardInfo
+//         width: 50%
+//         padding-right: 10%
+    
+//     .cardButton
+//         align-self: flex-end
+//         padding-right: 10%
+//         text-align: center
+//         padding-top: 3%
+//         // border: 3px solid black
+    
+//     // .button
+//     //     font-size: 2rem
+//     //     width: 700px
+//     //     height: 70px

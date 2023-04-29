@@ -1,0 +1,82 @@
+@import "@/styles/Breakpoint.module.sass"
+
+
+.container
+    background: url("/images/contactus.jpg") no-repeat
+    background-size: 100% 100%
+    font-family: 'Inria Sans', sans-serif
+    font-weight: bold
+    // height: 40rem
+    color: #fff
+    padding-top: 10%
+    padding-bottom: 10%
+    padding-left: 5%
+    display: flex
+    justify-content: center
+    p
+        // display: flex
+        // align-items: flex-end
+        // padding-bottom: 5rem
+        // -webkit-text-stroke-width: 1px
+        // -webkit-text-stroke-color: #766B6B
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)
+        backdrop-filter: blur(2px)
+
+@include phone
+    .container
+        height: 50vw
+        p
+            font-size: 5vw
+            padding-bottom: 15%
+// @include large
+// .container
+//     p
+//         font-size: 4rem
+@include large-phone
+    .container
+        height: 50vw
+        p
+            font-size: 5vw
+            padding-bottom: 15%
+
+@include tablet
+    .container
+        height: 50vw
+        p
+            font-size: 5vw
+            padding-bottom: 15%
+
+@include laptop
+    .container
+        height: 50vw
+        p
+            font-size: 5vw
+            padding-bottom: 15%
+
+@include desktop
+    .container
+        height: 40vw
+        p
+            font-size: 5vw
+            padding-bottom: 15%
+
+@include large
+    .container
+        height: 30vw
+        p
+            font-size: 5vw
+            padding-bottom: 15%
+
+@include extra-large
+    .container
+        height: 30vw
+        p
+            font-size: 4vw
+            padding-bottom: 15%
+
+@include extra-extra-large
+    .container
+        height: 30vw
+        p
+            font-size: 4vw
+            padding-bottom: 15%
