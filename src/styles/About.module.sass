@@ -4,24 +4,146 @@
 .aboutContainer
     font-family: 'Inria Sans', sans-serif
     padding-top: 3%
+    padding-right: 10%
     .aboutHeader
-        color: #2E4F0C
+        color: $dark-green
         font-weight: bold
     .aboutInfo
         color: #4A4B4A
         font-weight: lighter
         letter-spacing: 0.05em
         text-align: justify
+        line-height: 2
     .link2
-        color: #2E4F0C
+        color: $dark-green
         text-decoration: none
         font-weight: bold
     .link1
-        color: #2E4F0C
+        color: $dark-green
         font-style: italic
         font-weight: bold
         text-decoration: none
 
+@include phone
+    .aboutContainer
+        display: flex
+        flex-direction: column
+        padding-left: 10%
+        // padding-right: 4%
+        padding-right: 10%
+        video
+            padding-top: 3%
+            padding-bottom: 3%
+            width: 100%
+            height: 10vh
+            object-fit: cover
+        .subContainer
+            display: flex
+            flex-direction: column
+            padding-top: 3%
+            padding-bottom: 10%
+            .aboutHeader
+                // font-size: 1rem
+            .aboutInfo
+                font-size: .8rem
+                padding-top: 10%
+                text-align: left
+                line-height: 1.5
+            .link2
+                align-self: flex-end
+                font-size: .8rem
+                padding-top: 5%
+
+
+@include large-phone
+    .aboutContainer
+        display: flex
+        flex-direction: column
+        padding-left: 10%
+        // padding-right: 4%
+        padding-right: 10%
+        video
+            padding-top: 3%
+            padding-bottom: 3%
+            width: 100%
+            height: 15vh
+            object-fit: cover
+        .subContainer
+            display: flex
+            flex-direction: column
+            padding-top: 3%
+            padding-bottom: 10%
+            .aboutHeader
+                font-size: 1.2rem
+            .aboutInfo
+                font-size: 1rem
+                padding-top: 10%
+                text-align: left
+                line-height: 1.5
+            .link2
+                align-self: flex-end
+                font-size: 1rem
+                padding-top: 5%
+
+@include tablet
+    .aboutContainer
+        display: flex
+        flex-direction: column
+        padding-left: 10%
+        // padding-right: 4%
+        padding-right: 10%
+        video
+            padding-top: 3%
+            padding-bottom: 3%
+            width: 100%
+            height: 20vh
+            object-fit: cover
+        .subContainer
+            display: flex
+            flex-direction: column
+            padding-top: 3%
+            padding-bottom: 10%
+            .aboutHeader
+                font-size: 1.5rem
+            .aboutInfo
+                font-size: 1.2rem
+                padding-top: 10%
+                text-align: left
+                line-height: 1.5
+            .link2
+                align-self: flex-end
+                font-size: 1.2rem
+                padding-top: 5%
+    
+@include laptop
+    .aboutContainer
+        display: flex
+        flex-direction: column
+        padding-left: 10%
+        // padding-right: 4%
+        padding-right: 10%
+        video
+            padding-top: 3%
+            padding-bottom: 3%
+            width: 100%
+            height: 20vh
+            object-fit: cover
+        .subContainer
+            display: flex
+            flex-direction: column
+            padding-bottom: 10%
+            .aboutHeader
+                font-size: 1.9rem
+            .aboutInfo
+                font-size: 1.2rem
+                padding-top: 7%
+                text-align: left
+                line-height: 1.5
+            .link2
+                align-self: flex-end
+                font-size: 1.2rem
+                padding-top: 5%
+    
 @include desktop
     .aboutContainer
         display: flex
@@ -29,62 +151,256 @@
         padding-left: 10%
         // padding-right: 4%
         padding-right: 10%
-        img
+        video
             padding-top: 3%
             padding-bottom: 3%
             width: 100%
-            height: 500px
-
+            height: 25vh
+            object-fit: cover
+        .subContainer
+            display: flex
+            flex-direction: column
+            padding-bottom: 10%
+            .aboutHeader
+                font-size: 2.5rem
+            .aboutInfo
+                font-size: 1.2rem
+                padding-top: 7%
+                text-align: left
+                line-height: 1.5
+            .link2
+                align-self: flex-end
+                font-size: 1.2rem
+                padding-top: 5%
     
-    .aboutHeader
-        font-size: 2.5rem
-
-    .aboutInfo
-        padding-left: 4.5%
-        font-size: 1.5rem
-        padding-top: 3%
-
-    .subContainer
-        display: flex
-        flex-direction: column
-
-        padding-top: 3%
-    
-    .link2
-        align-self: flex-end
-        font-size: 1.5rem
-        padding-top: 5%
-
-@include extra-large
+@include large
     .aboutContainer
         display: flex
         flex-direction: column
         padding-left: 10%
         // padding-right: 4%
         padding-right: 10%
-        img
+        video
             padding-top: 3%
             padding-bottom: 3%
             width: 100%
-            height: 700px
-
-    
-    .aboutHeader
-        font-size: 3rem
-
-    .aboutInfo
-        padding-left: 4.5%
-        font-size: 2rem
-        padding-top: 3%
-
-    .subContainer
+            height: 40vh
+            object-fit: cover
+        .subContainer
+            display: flex
+            flex-direction: column
+            padding-bottom: 10%
+            .aboutHeader
+                font-size: 3rem
+            .aboutInfo
+                font-size: 1.5rem
+                padding-top: 7%
+                text-align: left
+                line-height: 1.5
+            .link2
+                align-self: flex-end
+                font-size: 1.5rem
+                padding-top: 5%
+        
+@include extra-large
+    .aboutContainer
         display: flex
         flex-direction: column
+        padding-left: 10%
+        // padding-right: 4%
+        .videoContainer
+            width: 100%
+            text-align: left
+            margin: 0
+            video
+                padding-top: 3%
+                padding-bottom: 3%
+                width: 100%
+                height: 50vh
+                object-fit: cover
+        .subContainer
+            display: flex
+            flex-direction: column
+            padding-bottom: 10%
+            .aboutHeader
+                font-size: 3.5rem
+            .aboutInfo
+                font-size: 2rem
+                padding-top: 5%
+                text-align: left
+                line-height: 1.5
+            .link2
+                align-self: flex-end
+                font-size: 2rem
+                padding-top: 5%
 
-        padding-top: 3%
-    
-    .link2
-        align-self: flex-end
-        font-size: 1.5rem
-        padding-top: 5%
+@include extra-extra-large
+    .aboutContainer
+        display: flex
+        flex-direction: column
+        padding-left: 10%
+        // padding-right: 4%
+        padding-right: 10%
+        video
+            padding-top: 3%
+            padding-bottom: 3%
+            width: 100%
+            height: 70vh
+            object-fit: cover
+        .subContainer
+            display: flex
+            flex-direction: column
+            padding-bottom: 10%
+            .aboutHeader
+                font-size: 6rem
+            .aboutInfo
+                font-size: 3rem
+                padding-top: 5%
+                text-align: left
+                line-height: 1.5
+            .link2
+                align-self: flex-end
+                font-size: 3rem
+                padding-top: 5%
+
+
+
+// @include phone
+//     .aboutContainer
+//         display: flex
+//         flex-direction: column
+//         padding-left: 10%
+//         // padding-right: 4%
+//         padding-right: 10%
+//         img
+//             padding-top: 3%
+//             padding-bottom: 3%
+//             width: 100%
+//             height: 20rem
+//         .subContainer
+//             display: flex
+//             flex-direction: column
+//             padding-top: 3%
+//             .aboutHeader
+//                 font-size: 1.5rem
+//             .aboutInfo
+//                 padding-left: 4.5%
+//                 font-size: .7rem
+//                 padding-top: 3%
+//             .link2
+//                 align-self: flex-end
+//                 font-size: 1rem
+//                 padding-top: 5%
+
+// @include tablet
+//     .aboutContainer
+//         display: flex
+//         flex-direction: column
+//         padding-left: 10%
+//         // padding-right: 4%
+//         padding-right: 10%
+//         img
+//             padding-top: 3%
+//             padding-bottom: 3%
+//             width: 100%
+//             height: 20rem
+//         .subContainer
+//             display: flex
+//             flex-direction: column
+//             padding-top: 3%
+//             .aboutHeader
+//                 font-size: 1.5rem
+//             .aboutInfo
+//                 padding-left: 4.5%
+//                 font-size: .7rem
+//                 padding-top: 3%
+//             .link2
+//                 align-self: flex-end
+//                 font-size: 1rem
+//                 padding-top: 5%
+
+// @include laptop
+//     .aboutContainer
+//         display: flex
+//         flex-direction: column
+//         padding-left: 10%
+//         // padding-right: 4%
+//         padding-right: 10%
+//         img
+//             padding-top: 3%
+//             padding-bottom: 3%
+//             width: 100%
+//             height: 30rem
+//         .subContainer
+//             display: flex
+//             flex-direction: column
+//             padding-top: 3%
+//             .aboutHeader
+//                 font-size: 1.5rem
+//             .aboutInfo
+//                 padding-left: 4.5%
+//                 font-size: .9rem
+//                 padding-top: 3%
+//             .link2
+//                 align-self: flex-end
+//                 font-size: 1.1rem
+//                 padding-top: 5%
+
+// @include desktop
+//     .aboutContainer
+//         display: flex
+//         flex-direction: column
+//         padding-left: 10%
+//         // padding-right: 4%
+//         padding-right: 10%
+//         img
+//             padding-top: 3%
+//             padding-bottom: 3%
+//             width: 100%
+//             height: 30rem
+//         .subContainer
+//             display: flex
+//             flex-direction: column
+//             padding-top: 3%
+//             .aboutHeader
+//                 font-size: 2rem
+//             .aboutInfo
+//                 padding-left: 4.5%
+//                 font-size: 1rem
+//                 padding-top: 3%
+//             .link2
+//                 align-self: flex-end
+//                 font-size: 1.3rem
+//                 padding-top: 5%
+
+// @include extra-large
+//     .aboutContainer
+//         display: flex
+//         flex-direction: column
+//         padding-left: 10%
+//         // padding-right: 4%
+//         padding-right: 10%
+//         img
+//             padding-top: 3%
+//             padding-bottom: 3%
+//             // width: 100%
+//             height: 40rem
+//         .subContainer
+//         display: flex
+//         flex-direction: column
+//         padding-top: 3%
+//         .aboutHeader
+//             font-size: 3rem
+
+//         .aboutInfo
+//             padding-left: 4.5%
+//             font-size: 2rem
+//             padding-top: 3%
+
+
+        
+//         .link2
+//             align-self: flex-end
+//             font-size: 1.5rem
+//             padding-top: 5%
 

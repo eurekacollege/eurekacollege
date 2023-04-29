@@ -9,8 +9,9 @@ export default function CourseSection() {
           <p>CERTIFICATION COURSES</p>
         </div>
         <CourseCard
-          src="/images/certification.jpg"
+          src="/images/certCourses2560.jpg"
           children2="Explore Certification Courses"
+          href="/courses#certificate"
           imageStyle={styles.cardImage}
           button={true}
           buttonStyle={styles.courseButton}
@@ -31,7 +32,7 @@ export default function CourseSection() {
             <li>Palliative</li>
             <li>Mental Health Certificate</li>
             <li>Medication Administration</li>
-            <li>More Courses Soon - Medical Office Administrator and ESL</li>
+            <li>More Courses Soon - Medical Office Administrator and ESL Courses</li>
           </ul>
         </CourseCard>
       </div>
@@ -40,8 +41,9 @@ export default function CourseSection() {
           <p>IENs PREPARATION COURSES</p>
         </div>
         <CourseCard
-          src="/images/students.jpg"
+          src="/images/iensPrepCourses.jpg"
           children2="Explore IENs Preparation Courses"
+          href="/courses#iens"
           imageStyle={styles.cardImage}
           button={true}
           buttonStyle={styles.courseButton}

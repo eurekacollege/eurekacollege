@@ -1,72 +1,414 @@
 @import "@/styles/Breakpoint.module.sass"
 
 .mainFooter
-    background: #2E4F0C
+    background: $dark-green
     color: #FFFFFF
     font-family: 'Inria Sans', sans-serif
     padding-top: 3%
     padding-left: 3%
     padding-right: 3%
     padding-bottom: 2%
+    letter-spacing: .05em
+    line-height: 1.5
     p
         font-weight: bold
         span
             font-weight: normal
 
-.subFooterHead
-    padding-bottom: 3%
-
-.subFooter2
-    padding-bottom: 5%
-    img
-        border-radius: 30px
-
-@include desktop
-    .mainFooter1
-        display: flex
-        justify-content: space-between
-        p
-            font-size: 1.3rem
-    
     .subFooter1
-        // display: flex
-        // justify-content: space-between
-    
-    .subFooter2
-        // display: flex
-        // justify-content: space-between
+        .subFooterHead
+            padding-bottom: 3%
         img
-            width: 50px
-            height: 50px
-            padding-left: 1%
-            padding-top: 1%
-    
+            border-radius: 30px
+    .subFooter2
+        padding-bottom: 5%
+        .subFooterText
+            padding-top: 5%
+            font-style: italic
+            font-weight: normal
+        a
+            padding-top: 5%
+            text-decoration: none
+            color: $yellow
+            font-style: italic
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+
+
+@include phone
+    .mainFooter1
+        // display: flex
+        // flex-direction: column
+        // justify-content: center
+        // text-align: center
+        p
+            font-size: .7rem
+        .subFooter1
+            // display: flex
+            // justify-content: space-between
+            .subFooterHead
+                font-size: .9rem
+            img
+                width: 15%
+                height: 10%
+                padding-left: 1%
+                padding-top: 1%
+        .subFooter2
+            // display: flex
+            // justify-content: space-between
+            a
+                font-size: .7rem
+            .subFooterText
     .subFooter3
         text-align: center
         span
-            font-size: 1.3rem
+            font-size: .7rem
+
+@include large-phone
+    .mainFooter1
+        // display: flex
+        // flex-direction: column
+        // justify-content: center
+        // text-align: center
+        p
+            font-size: 1rem
+        .subFooter1
+            // display: flex
+            // justify-content: space-between
+            .subFooterHead
+                font-size: 1.2rem
+            img
+                width: 15%
+                height: 10%
+                padding-left: 1%
+                padding-top: 1%
+        .subFooter2
+            // display: flex
+            // justify-content: space-between
+            a
+                font-size: 1rem
+            .subFooterText
+    .subFooter3
+        text-align: center
+        span
+            font-size: 1rem
+
+@include tablet
+    .mainFooter1
+        // display: flex
+        // flex-direction: column
+        // justify-content: center
+        // text-align: center
+        p
+            font-size: 1.2rem
+        .subFooter1
+            // display: flex
+            // justify-content: space-between
+            .subFooterHead
+                font-size: 1.5rem
+            img
+                width: 8%
+                height: 8%
+                padding-left: 1%
+                padding-top: 1%
+        .subFooter2
+            // display: flex
+            // justify-content: space-between
+            a
+                font-size: 1.2rem
+            .subFooterText
+    .subFooter3
+        text-align: center
+        span
+            font-size: 1.2rem
+
+@include laptop
+    .mainFooter1
+        display: flex
+        // flex-direction: column
+        // justify-content: center
+        // text-align: center
+        gap: 5%
+        p
+            font-size: 1rem
+        .subFooter1
+            width: 50%
+            // display: flex
+            // justify-content: space-between
+            .subFooterHead
+                font-size: 1.2rem
+            img
+                width: 9%
+                height: 9%
+                padding-left: 1%
+                padding-top: 1%
+        .subFooter2
+            padding-top: 5%
+            width: 50%
+            // display: flex
+            // justify-content: space-between
+            a
+                font-size: 1rem
+            .subFooterText
+    .subFooter3
+        text-align: center
+        span
+            font-size: 1rem
+    
+@include desktop
+    .mainFooter1
+        display: flex
+        padding-bottom: 5%
+        // flex-direction: column
+        // justify-content: center
+        // text-align: center
+        gap: 5%
+        p
+            font-size: 1rem
+        .subFooter1
+            width: 50%
+            // display: flex
+            // justify-content: space-between
+            .subFooterHead
+                font-size: 1.2rem
+            img
+                width: 9%
+                height: 9%
+                padding-left: 1%
+                padding-top: 1%
+        .subFooter2
+            padding-top: 3%
+            width: 50%
+            // display: flex
+            // justify-content: space-between
+            a
+                font-size: 1rem
+            .subFooterText
+    .subFooter3
+        text-align: center
+        span
+            font-size: 1rem
+
+@include large
+    .mainFooter1
+        display: flex
+        padding-bottom: 5%
+        // flex-direction: column
+        // justify-content: center
+        // text-align: center
+        gap: 5%
+        p
+            font-size: 1.2rem
+        .subFooter1
+            width: 50%
+            // display: flex
+            // justify-content: space-between
+            .subFooterHead
+                font-size: 2rem
+            img
+                width: 9%
+                height: 9%
+                padding-left: 1%
+                padding-top: 1%
+        .subFooter2
+            padding-top: 3.9%
+            width: 50%
+            // display: flex
+            // justify-content: space-between
+            a
+                font-size: 1.2rem
+            .subFooterText
+    .subFooter3
+        text-align: center
+        span
+            font-size: 1.2rem
 
 @include extra-large
     .mainFooter1
         display: flex
-        justify-content: space-between
+        padding-bottom: 5%
+        // flex-direction: column
+        // justify-content: center
+        // text-align: center
+        gap: 5%
         p
-            font-size: 2rem
-    
-    .subFooter1
-        // display: flex
-        // justify-content: space-between
-    
-    .subFooter2
-        // display: flex
-        // justify-content: space-between
-        img
-            width: 80px
-            height: 60px
-            padding-left: 1%
-            padding-top: 1%
-    
+            font-size: 1.7rem
+        .subFooter1
+            width: 50%
+            // display: flex
+            // justify-content: space-between
+            .subFooterHead
+                font-size: 2rem
+            img
+                width: 9%
+                height: 9%
+                padding-left: 1%
+                padding-top: 1%
+        .subFooter2
+            padding-top: 3%
+            width: 50%
+            // display: flex
+            // justify-content: space-between
+            a
+                font-size: 1.7rem
+            .subFooterText
     .subFooter3
         text-align: center
         span
-            font-size: 2rem
+            font-size: 1.7rem
+
+@include extra-extra-large
+    .mainFooter1
+        display: flex
+        padding-bottom: 5%
+        // flex-direction: column
+        // justify-content: center
+        // text-align: center
+        gap: 5%
+        p
+            font-size: 2.5rem
+        .subFooter1
+            width: 50%
+            // display: flex
+            // justify-content: space-between
+            .subFooterHead
+                font-size: 3.5rem
+            img
+                width: 9%
+                height: 9%
+                padding-left: 1%
+                padding-top: 1%
+        .subFooter2
+            padding-top: 3%
+            width: 50%
+            // display: flex
+            // justify-content: space-between
+            a
+                font-size: 2.5rem
+            .subFooterText
+    .subFooter3
+        text-align: center
+        span
+            font-size: 2.5rem
+
+
+
+// @include tablet
+//     .mainFooter1
+//         display: flex
+//         justify-content: space-between
+//         p
+//             font-size: .8rem
+//         .subFooter1
+//             // display: flex
+//             // justify-content: space-between
+        
+//         .subFooter2
+//             // display: flex
+//             // justify-content: space-between
+//             img
+//                 width: 50px
+//                 height: 50px
+//                 padding-left: 1%
+//                 padding-top: 1%
+//     .subFooter3
+//         text-align: center
+//         span
+//             font-size: .8rem
+
+
+// @include laptop
+//     .mainFooter1
+//         display: flex
+//         justify-content: space-between
+//         p
+//             font-size: 1rem
+//         .subFooter1
+//             // display: flex
+//             // justify-content: space-between
+        
+//         .subFooter2
+//             // display: flex
+//             // justify-content: space-between
+//             img
+//                 width: 50px
+//                 height: 50px
+//                 padding-left: 1%
+//                 padding-top: 1%
+    
+//     .subFooter3
+//         text-align: center
+//         span
+//             font-size: 1rem
+
+// @include desktop
+//     .mainFooter1
+//         display: flex
+//         justify-content: space-between
+//         p
+//             font-size: 1.25rem
+//         .subFooter1
+//             // display: flex
+//             // justify-content: space-between
+        
+//         .subFooter2
+//             // display: flex
+//             // justify-content: space-between
+//             img
+//                 width: 50px
+//                 height: 50px
+//                 padding-left: 1%
+//                 padding-top: 1%
+    
+//     .subFooter3
+//         text-align: center
+//         span
+//             font-size: 1.3rem
+    
+// @include large
+//     .mainFooter1
+//         display: flex
+//         justify-content: space-between
+//         p
+//             font-size: 1.5rem
+//         .subFooter1
+//             // display: flex
+//             // justify-content: space-between
+        
+//         .subFooter2
+//             // display: flex
+//             // justify-content: space-between
+//             img
+//                 width: 4rem
+//                 height: 3rem
+//                 padding-left: 1%
+//                 padding-top: 1%
+    
+//     .subFooter3
+//         text-align: center
+//         span
+//             font-size: 1.5rem
+
+
+// @include extra-large
+//     .mainFooter1
+//         display: flex
+//         justify-content: space-between
+//         p
+//             font-size: 2rem
+//         .subFooter1
+//             // display: flex
+//             // justify-content: space-between
+        
+//         .subFooter2
+//             // display: flex
+//             // justify-content: space-between
+//             img
+//                 width: 80px
+//                 height: 60px
+//                 padding-left: 1%
+//                 padding-top: 1%
+    
+//     .subFooter3
+//         text-align: center
+//         span
+//             font-size: 2rem

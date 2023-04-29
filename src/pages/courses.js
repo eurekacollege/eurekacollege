@@ -1,4 +1,4 @@
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/Navigation";
 import CourseSection from "@/components/courses/CourseSection";
 import CourseHeadliner from "@/components/courses/CourseHeadliner";
 import Footer from "@/components/Footer";
@@ -18,7 +18,7 @@ export default function Courses() {
         <p>PALLIATIVE CERTIFICATE</p>
         <p>MENTAL HEALTH CERTIFICATE</p>
         <p>MEDICATION ADMINISTRATION</p>
-        <p>More Courses Soon - Medical Office Administration and ESL</p>
+        <p>More Courses Soon - Medical Office Administration and ESL Courses</p>
         <p className={styles.certContact}>
           Please connect with us to learn more about our short certification
           courses.

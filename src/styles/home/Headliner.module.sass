@@ -1,54 +1,416 @@
 @import "@/styles/Breakpoint.module.sass"
 
 .mainHeadliner
-    background: url("/images/headliner.png") no-repeat
-    background-position: 40% 60%
-    background-size: cover
+    background: url("/images/bulbhands.png") no-repeat
+    background-size: 100% 100%
     font-family: 'Inria Sans', sans-serif
     font-weight: bold
+    padding-top: 10%
+    padding-bottom: 10%
+    padding-left: 5%
+    line-height: 1
+    // border: 3px solid black
+    .word1
+        color: $dark-green
+    .word2
+        color: #766B6B
+    .button
+        .but1
+            margin-right: 30px
+            font-weight: bold
+            a
+                text-decoration: none
+                color: #EFFCE3
+        .but2
+            font-weight: bold
+            a
+                text-decoration: none
+                color: $dark-green
 
-.word1
-    color: #2E4F0C
+.header
+    font-family: 'Inria Sans', sans-serif
+    // font-weight: bold
+    background: #FFBD59
+    color: $dark-green
 
-.word2
-    color: #766B6B
+@include phone
+    .mainHeadliner
+        line-height: 0
+        height: 50vw
+        .word1
+            font-size: 5vw
+        .word2
+            font-size: 5vw
+        .button
+            display: flex
+            flex-direction: column
+            padding-top: .5rem
+            .but1
+                padding: .3rem
+                padding-top: .5rem
+                padding-bottom: .5rem
+                font-size: 4vw
+                padding-left: .6rem
+                padding-right: .6rem
+                margin-bottom: .5rem
+            .but2
+                padding: .3rem
+                padding-top: .5rem
+                padding-bottom: .5rem
+                font-size: 4vw
+                padding-left: .6rem
+                padding-right: .6rem
+    .header
+        padding-left: 1%
+        padding-right: 1%
+        font-size: 3vw
+        text-align: left
+    
+@include large-phone
+    .mainHeadliner
+        line-height: .5
+        height: 50vw
+        .word1
+            font-size: 5vw
+        .word2
+            font-size: 5vw
+        .button
+            display: flex
+            flex-direction: column
+            padding-top: .5rem
+            .but1
+                padding: .3rem
+                padding-top: .5rem
+                padding-bottom: .5rem
+                font-size: 4vw
+                padding-left: .8rem
+                padding-right: .8rem
+                margin-bottom: .5rem
+            .but2
+                padding: .3rem
+                padding-top: .5rem
+                padding-bottom: .5rem
+                font-size: 4vw
+                padding-left: .8rem
+                padding-right: .8rem
+    .header
+        padding-left: 1%
+        padding-right: 1%
+        font-size: 3vw
+        text-align: left
 
-.but1
-    margin-right: 30px
+@include tablet
+    .mainHeadliner
+        height: 50vw
+        .word1
+            font-size: 5vw
+        .word2
+            font-size: 5vw
+        .button
+            display: flex
+            padding-top: .5rem
+            .but1
+                font-size: 2.5vw
+                padding: .5rem
+                padding-left: 1rem
+                padding-right: 1rem
+                margin-bottom: .5rem
+                width: auto
+                margin-right: 10px
+            .but2
+                font-size: 2.5vw
+                padding: .5rem
+                padding-left: 1rem
+                padding-right: 1rem
+                width: auto
+    
+    .header
+        padding-top: 1%
+        padding-left: 2%
+        padding-right: 2%
+        padding-bottom: 1%
+        font-size: .75rem
+        text-align: left
+    
+@include laptop
+    .mainHeadliner
+        height: 50vw
+        .word1
+            font-size: 5vw
+        .word2
+            font-size: 5vw
+        .button
+            display: flex
+            padding-top: .5rem
+            .but1
+                font-size: 2.5vw
+                padding: .5rem
+                padding-left: 1rem
+                padding-right: 1rem
+                margin-bottom: .5rem
+                width: auto
+                margin-right: 20px
+            .but2
+                font-size: 2.5vw
+                padding: .5rem
+                padding-left: 1rem
+                padding-right: 1rem
+                width: auto
 
+    .header
+        padding-top: 1%
+        padding-left: 2%
+        padding-right: 2%
+        padding-bottom: 1%
+        font-size: .75rem
+        text-align: left
 
 @include desktop
     .mainHeadliner
-        width: 100%
-        font-size: 4rem
-        padding-top: 8%
-        padding-left: 5%
-        height: 50vh
+        height: 40vw
+        .word1
+            font-size: 5vw
+        .word2
+            font-size: 5vw
+        .button
+            display: flex
+            padding-top: .5rem
+            .but1
+                font-size: 2.5vw
+                padding: .5rem
+                padding-left: 1rem
+                padding-right: 1rem
+                margin-bottom: .5rem
+                width: auto
+                margin-right: 20px
+            .but2
+                font-size: 2.5vw
+                padding: .5rem
+                padding-left: 1rem
+                padding-right: 1rem
+                width: auto
     
-    .but1
-        font-size: 1.5rem
-        width: 280px
-        height: 50px
-    
-    .but2
-        font-size: 1.5rem
-        width: 280px
-        height: 50px
+    .header
+        padding-top: 1%
+        padding-left: 2%
+        padding-right: 2%
+        padding-bottom: 1%
+        font-size: 1rem
+        text-align: left
+
+@include large
+    .mainHeadliner
+        height: 35vw
+        .word1
+            font-size: 5vw
+        .word2
+            font-size: 5vw
+        .button
+            display: flex
+            padding-top: .5rem
+            .but1
+                font-size: 2.5vw
+                padding: .5rem
+                padding-left: 1.5rem
+                padding-right: 1.5rem
+                margin-bottom: .5rem
+                width: auto
+                margin-right: 30px
+            .but2
+                font-size: 2.5vw
+                padding: .5rem
+                padding-left: 1.5rem
+                padding-right: 1.5rem
+                width: auto
+
+    .header
+        padding-top: 1%
+        padding-left: 2%
+        padding-right: 2%
+        padding-bottom: 1%
+        font-size: .73rem
+        text-align: left
 
 @include extra-large
     .mainHeadliner
-        width: 100%
-        font-size: 5rem
-        padding-top: 8%
-        padding-left: 5%
-        height: 60vh
+        height: 35vw
+        .word1
+            font-size: 5vw
+        .word2
+            font-size: 5vw
+        .button
+            display: flex
+            padding-top: .5rem
+            .but1
+                font-size: 2.5vw
+                padding: .5rem
+                padding-left: 1.5rem
+                padding-right: 1.5rem
+                margin-bottom: .5rem
+                width: auto
+                margin-right: 50px
+            .but2
+                font-size: 2.5vw
+                padding: .5rem
+                padding-left: 1.5rem
+                padding-right: 1.5rem
+                width: auto
+    .header
+        padding-top: 1%
+        padding-left: 2%
+        padding-right: 2%
+        padding-bottom: 1%
+        font-size: .8vw
+        // text-align: left
+        text-align: center
 
-    .but1
-        font-size: 2rem
-        width: 380px
-        height: 60px
+@include extra-extra-large
+    .mainHeadliner
+        height: 35vw
+        .word1
+            font-size: 5vw
+        .word2
+            font-size: 5vw
+        .button
+            display: flex
+            padding-top: .5rem
+            .but1
+                font-size: 2.5vw
+                padding: 1rem
+                padding-left: 2.5rem
+                padding-right: 2.5rem
+                margin-bottom: .5rem
+                width: auto
+                margin-right: 50px
+            .but2
+                font-size: 2.5vw
+                padding: 1rem
+                padding-left: 2.5rem
+                padding-right: 2.5rem
+                width: auto
+    .header
+        padding-top: 1%
+        padding-left: 2%
+        padding-right: 2%
+        padding-bottom: 1%
+        font-size: .8vw
+        text-align: left
+
+
+
+// @include phone
+//     .mainHeadliner
+//         // width: 100%
+//         font-size: 1.5rem
+//         // padding-top: 8%
+//         padding-left: 5%
+//         // height: 40vh
     
-    .but2
-        font-size: 2rem
-        width: 380px
-        height: 60px
+//     .but1
+//         font-size: .8rem
+//         width: 120px
+//         height: 30px
+    
+//     .but2
+//         font-size: .8rem
+//         width: 120px
+//         height: 30px
+
+// @include tablet
+//     .mainHeadliner
+//         // width: 100%
+//         font-size: 1.5rem
+//         // padding-top: 8%
+//         padding-left: 5%
+//         // width: 768px
+//         // height: 30vh
+//         // max-height: 100%
+
+    
+//     .but1
+//         font-size: .8rem
+//         width: 120px
+//         height: 30px
+    
+//     .but2
+//         font-size: .8rem
+//         width: 120px
+//         height: 30px
+        
+
+
+// @include laptop
+//     .mainHeadliner
+//         // width: 100%
+//         font-size: 2.5rem
+//         // padding-top: 8%
+//         padding-left: 5%
+//         // height: 70%
+    
+//     .but1
+//         font-size: 1rem
+//         width: 200px
+//         height: 40px
+    
+//     .but2
+//         font-size: 1rem
+//         width: 200px
+//         height: 40px
+
+
+// @include desktop
+//     .mainHeadliner
+//         // width: 100%
+//         font-size: 3rem
+//         // padding-top: 8%
+//         padding-left: 5%
+//         // height: 50vh
+    
+//     .but1
+//         font-size: 1.2rem
+//         width: 250px
+//         height: 50px
+    
+//     .but2
+//         font-size: 1.2rem
+//         width: 250px
+//         height: 50px
+
+// @include large
+//     .mainHeadliner
+//         // width: 100%
+//         font-size: 4rem
+//         // padding-top: 8%
+//         padding-left: 5%
+//         // height: 40rem
+
+//     .but1
+//         font-size: 1.5rem
+//         width: 380px
+//         height: 60px
+    
+//     .but2
+//         font-size: 1.5rem
+//         width: 380px
+//         height: 60px
+
+
+// @include extra-large
+//     .mainHeadliner
+//         // width: 100%
+//         font-size: 5rem
+//         // padding-top: 8%
+//         padding-left: 5%
+//         // height: 50rem
+//         // height: 50rem
+//         // max-height: 100%
+
+//     .but1
+//         font-size: 2rem
+//         width: 380px
+//         height: 60px
+    
+//     .but2
+//         font-size: 2rem
+//         width: 380px
+//         height: 60px

@@ -1,17 +1,19 @@
 /* eslint-disable react/no-unescaped-entities */
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import styles from "@/styles/about/About.module.sass"
+import styles from "@/styles/about/About.module.sass";
+import AboutHeadliner from "@/components/about/AboutHeadliner";
 
 export default function About() {
   return (
     <>
       <Navbar />
+      <AboutHeadliner/>
       <div className={styles.container}>
         <div>
-          <p className={styles.title}>ABOUT EUREKA COLLEGE</p>
+          <p className={styles.title} id="about">ABOUT EUREKA COLLEGE OF CANADA</p>
           <p className={styles.para}>
-            Eureka College is a dedicated organization that supports
+            Eureka College of Canada is a dedicated organization that supports
             internationally educated nurses (IENs) as they transition into
             Canadian Nursing. We provide a mentorship program that focuses on
             helping IENs prepare for and successfully pass four nursing exams:
@@ -29,7 +31,7 @@ export default function About() {
             that these individuals need to succeed.
           </p>
           <p className={styles.para}>
-            At Eureka College, we believe that every IEN deserves the
+            At Eureka College of Canada, we believe that every IEN deserves the
             opportunity to pursue a successful nursing career in Canada. That's
             why we dedicate ourselves to providing high-quality mentorship and
             educational programs that are tailored to the unique needs of each
@@ -38,7 +40,7 @@ export default function About() {
             of the way.
           </p>
         </div>
-        <div>
+        {/* <div>
           <p className={styles.title}>VISION OF EUREKA COLLEGE</p>
           <p className={styles.para}>
             The school vision for Eureka College is to be a leader in supporting
@@ -64,19 +66,21 @@ export default function About() {
             vision is to be recognized as a leading institution for supporting
             IENs in their pursuit of a successful nursing career in Canada.
           </p>
-        </div>
+        </div> */}
         <div>
-          <p className={styles.title}>MISSION OF EUREKA COLLEGE</p>
+          <p className={styles.title} id="mission">MISSION OF EUREKA COLLEGE OF CANADA</p>
           <p className={styles.para}>
-            The mission of Eureka College is to support internationally educated
-            nurses (IENs) in their transition to Canadian nursing by providing a
-            comprehensive mentorship program that focuses on helping IENs
-            prepare for and successfully pass the four nursing exams required in
-            Canada. We strive to bridge the gap between IENs' education and
-            experience and the Canadian nursing system, and to help these
-            individuals achieve their career goals in Canada.
+            At Eureka College of Canada, we are committed to excellence in mentorship for
+            IENs and education for healthcare professionals. We aspire to create
+            a welcoming, inclusive community that values diversity and cultural
+            exchange. We aim to be recognized as a leading institution for
+            supporting teh next generation of healthcare professionals and
+            internationally educated nurses. We will do our best to provide a
+            supportive learning environment that fosters growth and development
+            and to ensure that each student is well-prepared and confident in
+            their ability to succeed in the Canadian healthcare system.
           </p>
-          <p className={styles.para}>
+          {/* <p className={styles.para}>
             Our team of experienced nursing professionals is committed to
             providing personalized guidance and support to each IEN, recognizing
             the unique challenges that these individuals face in their journey
@@ -93,7 +97,7 @@ export default function About() {
             development, and to ensure that each IEN is well-prepared and
             confident in their ability to succeed in the Canadian nursing
             system.
-          </p>
+          </p> */}
         </div>
       </div>
       <Footer />

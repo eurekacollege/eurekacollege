@@ -1,0 +1,57 @@
+@import "@/styles/Breakpoint.module.sass"
+
+
+.container
+    background: url("/images/connectWithUs.jpg") no-repeat
+    background-size: 100% 100%
+    font-family: 'Inria Sans', sans-serif
+    font-weight: bold
+    // height: 40rem
+    color: #fff
+    display: flex
+    justify-content: center
+    p
+        display: flex
+        align-items: center
+        // padding-bottom: 5rem
+        -webkit-text-stroke-width: 1px
+        -webkit-text-stroke-color: #766B6B
+
+@include phone
+    .container
+        height: 50vw
+// @include large
+// .container
+//     p
+//         font-size: 4rem
+@include large-phone
+    .container
+        height: 50vw
+
+@include tablet
+    .container
+        height: 50vw
+
+@include laptop
+    .container
+        height: 50vw
+
+@include desktop
+    .container
+        height: 40vw
+
+@include large
+    .container
+        height: 30vw
+
+@include extra-large
+    .container
+        height: 30vw
+
+@include extra-extra-large
+    .container
+        height: 30vw
+// @include large
+// .container
+//     p
+//         font-size: 4rem

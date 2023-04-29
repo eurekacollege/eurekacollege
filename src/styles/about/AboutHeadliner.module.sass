@@ -1,0 +1,94 @@
+@import "@/styles/Breakpoint.module.sass"
+
+
+.container
+    background: url("/images/aboutUs.jpg") no-repeat
+    background-size: 100% 100%
+    font-family: 'Inria Sans', sans-serif
+    font-weight: bold
+    color: #fff
+    display: flex
+    justify-content: center
+    padding-top: 10%
+    padding-bottom: 10%
+    padding-left: 5%
+    // height: 17vh
+    .subContainer
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        p
+            // -webkit-text-stroke-width: 1px
+            // -webkit-text-stroke-color: #766B6B
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)
+            backdrop-filter: blur(2px)
+
+@include phone
+    .container
+        height: 50vw
+        .subContainer
+            p
+                font-size: 5vw
+                padding-bottom: 15%
+
+@include large-phone
+    .container
+        height: 50vw
+        .subContainer
+            p
+                font-size: 5vw
+                padding-bottom: 15%
+
+@include tablet
+    .container
+        height: 50vw
+        .subContainer
+            p
+                font-size: 5vw
+                padding-bottom: 15%
+
+@include laptop
+    .container
+        height: 50vw
+        .subContainer
+            p
+                font-size: 5vw
+                padding-bottom: 15%
+
+@include desktop
+    .container
+        height: 40vw
+        .subContainer
+            p
+                font-size: 5vw
+                padding-bottom: 15%
+
+@include large
+    .container
+        height: 30vw
+        .subContainer
+            p
+                font-size: 5vw
+                padding-bottom: 15%
+
+@include extra-large
+    .container
+        height: 30vw
+        .subContainer
+            p
+                font-size: 4vw
+                padding-bottom: 15%
+
+@include extra-extra-large
+    .container
+        height: 30vw
+        .subContainer
+            p
+                font-size: 4vw
+                padding-bottom: 15%
+
+// @include large
+// .container
+//     height: 50vh
+//     p
+//         font-size: 4rem

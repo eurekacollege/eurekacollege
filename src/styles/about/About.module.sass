@@ -2,7 +2,7 @@
 
 
 .title
-    color: #2E4F0C
+    color: $dark-green
     font-family: 'Inria Sans', sans-serif
     font-weight: bold
 
@@ -11,21 +11,105 @@
     font-family: 'Inria Sans', sans-serif
     letter-spacing: 0.05em
     text-align: justify
+    line-height: 2
 
+@include phone
+    .container
+        padding-left: 10%
+        padding-right: 10%
+        padding-top: 3%
+        padding-bottom: 7%
+        .title
+            font-size: .9rem
+            padding-top: 10%
+            padding-bottom: 7%
+        .para
+            font-size: .8rem
+            padding-top: 2%
+            padding-bottom: 2%
+            line-height: 1.5
+
+
+@include large-phone
+    .container
+        padding-left: 10%
+        padding-right: 10%
+        padding-top: 3%
+        padding-bottom: 7%
+        .title
+            font-size: 1.2rem
+            padding-top: 10%
+            padding-bottom: 7%
+        .para
+            font-size: 1rem
+            padding-top: 2%
+            padding-bottom: 2%
+            line-height: 1.5
+  
+
+@include tablet
+    .container
+        padding-left: 10%
+        padding-right: 10%
+        padding-top: 3%
+        padding-bottom: 7%
+        .title
+            font-size: 1.5rem
+            padding-top: 10%
+            padding-bottom: 7%
+        .para
+            font-size: 1.2rem
+            padding-top: 2%
+            padding-bottom: 2%
+            line-height: 1.5
+
+@include laptop
+    .container
+        padding-left: 10%
+        padding-right: 10%
+        padding-top: 3%
+        padding-bottom: 7%
+        .title
+            font-size: 2rem
+            padding-top: 10%
+            padding-bottom: 7%
+        .para
+            font-size: 1.2rem
+            padding-top: 2%
+            padding-bottom: 2%
+            line-height: 1.5
+        
 @include desktop
     .container
         padding-left: 10%
         padding-right: 10%
         padding-top: 3%
         padding-bottom: 7%
-    .title
-        font-size: 2.5rem
-        padding-top: 4%
-
-    .para
-        font-size: 1.5rem
-        padding-top: 2%
-        padding-bottom: 2%
+        .title
+            font-size: 2.5rem
+            padding-top: 10%
+            padding-bottom: 7%
+        .para
+            font-size: 1.2rem
+            padding-top: 2%
+            padding-bottom: 2%
+            line-height: 1.5
+        
+@include large
+    .container
+        padding-left: 10%
+        padding-right: 10%
+        padding-top: 3%
+        padding-bottom: 7%
+        .title
+            font-size: 3rem
+            padding-top: 10%
+            padding-bottom: 7%
+        .para
+            font-size: 1.5rem
+            padding-top: 2%
+            padding-bottom: 2%
+            line-height: 1.5
 
 @include extra-large
     .container
@@ -33,13 +117,78 @@
         padding-right: 10%
         padding-top: 3%
         padding-bottom: 7%
-    .title
-        font-size: 3rem
-        padding-top: 4%
+        .title
+            font-size: 3.5rem
+            padding-top: 10%
+            padding-bottom: 7%
+        .para
+            font-size: 2rem
+            padding-top: 2%
+            padding-bottom: 2%
+            line-height: 1.5
 
-    .para
-        font-size: 2rem
-        padding-top: 2%
-        padding-bottom: 2%
+@include extra-extra-large
+    .container
+        padding-left: 10%
+        padding-right: 10%
+        padding-top: 3%
+        padding-bottom: 7%
+        .title
+            font-size: 6rem
+            padding-top: 10%
+            padding-bottom: 7%
+        .para
+            font-size: 3rem
+            padding-top: 2%
+            padding-bottom: 2%
+            line-height: 1.5
+
+
+
+
+// @include desktop
+//     .container
+//         padding-left: 10%
+//         padding-right: 10%
+//         padding-top: 3%
+//         padding-bottom: 7%
+//     .title
+//         font-size: 2.5rem
+//         padding-top: 4%
+
+//     .para
+//         font-size: 1.5rem
+//         padding-top: 2%
+//         padding-bottom: 2%
+
+// @include large
+//     .container
+//         padding-left: 10%
+//         padding-right: 10%
+//         padding-top: 3%
+//         padding-bottom: 7%
+//     .title
+//         font-size: 2.25rem
+//         padding-top: 4%
+
+//     .para
+//         font-size: 1.25rem
+//         padding-top: 2%
+//         padding-bottom: 2%
+
+// @include extra-large
+//     .container
+//         padding-left: 10%
+//         padding-right: 10%
+//         padding-top: 3%
+//         padding-bottom: 7%
+//     .title
+//         font-size: 3rem
+//         padding-top: 4%
+
+//     .para
+//         font-size: 2rem
+//         padding-top: 2%
+//         padding-bottom: 2%
 
     
