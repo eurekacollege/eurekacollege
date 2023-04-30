@@ -21,7 +21,7 @@ export default function CourseSection() {
         </div>
         <div className={styles.cardBox}>
           <div className={styles.cardHeader}>
-            <p>NCAS - RN MENTORSHIP PROGRAM</p>
+            <p>NCAS - RN</p>
           </div>
           <CourseCard src="/images/NCAS.png" imageStyle={styles.cardImage}>
             <p className={styles.paragraph}>
@@ -35,7 +35,7 @@ export default function CourseSection() {
         </div>
         <div className={styles.cardBox}>
           <div className={styles.cardHeader}>
-            <p>NCLEX - RN MENTORSHIP PROGRAM</p>
+            <p>NCLEX - RN</p>
           </div>
           <CourseCard src="/images/nclex.png" imageStyle={styles.cardImage}>
             <p className={styles.paragraph}>
