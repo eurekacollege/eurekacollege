@@ -33,7 +33,7 @@ export default function AboutSection() {
           when transitioning into Canadian nursing, and we work tirelessly to
           provide the guidance and support that they need to succeed.
         </p>
-        <Link href="/about#mission" className={styles.link2}>Learn More</Link>
+        <Link href="https://fnrc.ca/" target="_blank" rel="noopener noreferrer" className={styles.link2}>Learn More</Link>
       </div>
       <div className={styles.videoContainer}>
         <video src="/images/blinkingeyes.mp4" width={500} height={500} alt="image" autoPlay loop/>
