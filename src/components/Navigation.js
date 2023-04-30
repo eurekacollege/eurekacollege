@@ -2,6 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "@/styles/Nav.module.sass";
 import { Navbar, Nav } from "react-bootstrap";
+import { useRouter } from "next/router"
+
 
 // export default function Navbar() {
 
@@ -23,7 +25,14 @@ import { Navbar, Nav } from "react-bootstrap";
 //     )
 // }
 
+
+
 export default function Navigation() {
+  const router = useRouter()
+
+  function handleLogoClick(url) {
+    router.push(url)
+  }
   return (
     <div className={styles.mainNav}>
       <Navbar expand="lg" className={styles.navMain}>
@@ -33,6 +42,7 @@ export default function Navigation() {
             width={278}
             height={134}
             alt="Logo"
+            onClick={() => handleLogoClick("/")}
           />
         </Navbar.Brand>
         <Navbar.Toggle

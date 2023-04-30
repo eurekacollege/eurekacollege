@@ -9,7 +9,7 @@ export default function CourseSection() {
           <p>CERTIFICATION COURSES</p>
         </div>
         <CourseCard
-          src="/images/certCourses1440.jpg"
+          src="/images/certCourses2560.jpg"
           children2="Explore Certification Courses"
           href="/courses#certificate"
           imageStyle={styles.cardImage}

@@ -7,6 +7,7 @@ export default function Footer() {
   function redirectImg(url) {
     window.open(url, "_blank");
   }
+  
   return (
     <div className={styles.mainFooter}>
       <div className={styles.mainFooter1}>
