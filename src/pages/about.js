@@ -3,6 +3,7 @@ import Navbar from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import styles from "@/styles/about/About.module.sass";
 import AboutHeadliner from "@/components/about/AboutHeadliner";
+import Image from "next/image"
 
 export default function About() {
   return (
@@ -98,6 +99,21 @@ export default function About() {
             confident in their ability to succeed in the Canadian nursing
             system.
           </p> */}
+        </div>
+        <div>
+          <p className={styles.title}>MEET THE TEAM</p>
+          <div className={styles.imgContainer}>
+            <div>
+              <Image src="/images/archi.jpg" alt="Photo" width={70} height={80}/>
+              <p>Archimedes Sinlao</p>
+              <p>Founder, Owner</p>
+            </div>
+            <div>
+              <Image src="/images/marilee.jpg" alt="Photo" width={70} height={80}/>
+              <p>Marilee Dela Cruz Sinlao</p>
+              <p>CEO, Co-owner</p>
+            </div>
+          </div>
         </div>
       </div>
       <Footer />
