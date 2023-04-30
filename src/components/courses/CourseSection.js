@@ -37,7 +37,7 @@ export default function CourseSection() {
           <div className={styles.cardHeader}>
             <p>NCLEX - RN MENTORSHIP PROGRAM</p>
           </div>
-          <CourseCard src="/images/NCLEX.png" imageStyle={styles.cardImage}>
+          <CourseCard src="/images/nclex.png" imageStyle={styles.cardImage}>
             <p className={styles.paragraph}>
               Our National Council Licensure Examination (NCLEX) mentorship
               program covers all important areas needed for you to successfully
