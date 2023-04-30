@@ -18,7 +18,7 @@ export default function About() {
             internationally educated nurses (IENs) as they transition into
             Canadian Nursing. We provide a mentorship program that focuses on
             helping IENs prepare for and successfully pass four nursing exams:
-            CELBAN, NCAS, NCLEX-RN, and CPNRE. Our goal is to bridge the gap
+            CELBAN, NCAS, CPNRE / REXPN and, NCLEX-RN. Our goal is to bridge the gap
             between IENs' education and experience and the Canadian nursing
             system, and to help these individuals achieve their career goals in
             Canada.
@@ -75,7 +75,7 @@ export default function About() {
             IENs and education for healthcare professionals. We aspire to create
             a welcoming, inclusive community that values diversity and cultural
             exchange. We aim to be recognized as a leading institution for
-            supporting teh next generation of healthcare professionals and
+            supporting the next generation of healthcare professionals and
             internationally educated nurses. We will do our best to provide a
             supportive learning environment that fosters growth and development
             and to ensure that each student is well-prepared and confident in
