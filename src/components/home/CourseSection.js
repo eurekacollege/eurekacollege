@@ -62,8 +62,8 @@ export default function CourseSection() {
           </p>
           <ul>
             <li>CELBAN</li>
-            <li>NCAS-RN Mentorship Program</li>
-            <li>NCLEX-RN Mentorship Program</li>
+            <li>NCAS-RN</li>
+            <li>NCLEX-RN</li>
           </ul>
         </CourseCard>
       </div>

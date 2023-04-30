@@ -27,7 +27,7 @@ export default function AboutSection() {
       <div className={styles.subContainer}>
         <p className={styles.aboutHeader}>WHAT SETS US APART</p>
         <p className={styles.aboutInfo}>
-          Eureka College of Canada was built under the foundations of <Link href="https://fnrc.ca/" className={styles.link1}>Footprints Nursing
+          Eureka College of Canada was built under the foundations of <Link href="https://fnrc.ca/" target="_blank" rel="noopener noreferrer" className={styles.link1}>Footprints Nursing
           Review Center</Link> which is a review center for internationally educated
           nurses. We have a deep understanding of the challenges that IENs face
           when transitioning into Canadian nursing, and we work tirelessly to
