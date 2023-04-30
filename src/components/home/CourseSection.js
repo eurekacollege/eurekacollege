@@ -58,7 +58,7 @@ export default function CourseSection() {
             meet the requirements of the Canadian nursing profession. Discover
             more about our internationally-educated nurses certification program
             and take the first step towards a successful career in nursing in
-            Canada,
+            Canada.
           </p>
           <ul>
             <li>CELBAN</li>
