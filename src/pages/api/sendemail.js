@@ -101,11 +101,11 @@ export default async function handler(req, res) {
     host: "smtp-relay.sendinblue.com",
     port: 587,
     auth: {
-      user: `${process.env.NEXT_PUBLIC_EMAIL}`,
-      pass: `${process.env.NEXT_PUBLIC_PASS}`,
+      user: process.env.NEXT_PUBLIC_EMAIL,
+      pass: process.env.NEXT_PUBLIC_PASS,
     },
     tls: {
-      rejectUnauthorized: true,
+      rejectUnauthorized: false,
     },
   });
 
@@ -113,7 +113,7 @@ export default async function handler(req, res) {
     // Send the email using nodemailer
     await transporter.sendMail({
       from: email,
-      to: "sangilemiljan@gmail.com",
+      to: "eurekacollegecanada@gmail.com",
       subject: `${subject} from ${fname} ${lname}`,
       text: message,
     });

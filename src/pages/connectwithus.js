@@ -149,7 +149,7 @@ export default function ConnectWithUs() {
         e.preventDefault()
         if(submitting){
             errors.push("Please wait for a moment to send again")
-            setSuccessMessage("")
+            setSuccess("")
             return
         }
         setSubmitting(true)
