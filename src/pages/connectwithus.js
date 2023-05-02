@@ -145,6 +145,16 @@ export default function ConnectWithUs() {
         return errors.length === 0
     }
 
+    function handleCancel() {
+        setFname("")
+        setLname("")
+        setEmail("")
+        setSubject("")
+        setMessage("")
+        setErrors([])
+        setSuccess("")
+    }
+
     async function handleSubmit(e) {
         e.preventDefault()
         if(submitting){
@@ -219,7 +229,7 @@ export default function ConnectWithUs() {
                         <Input type="textarea" value={message} onChangeTextArea={handleMessageChange} placeholder="Message"/>
                     </div>
                     <div className={styles.buttonContainer}>
-                        <Button green={true} style2={styles.but1}>CANCEL</Button>
+                        <Button green={true} style2={styles.but1} onClick={() => handleCancel}>CANCEL</Button>
                         <Button type="submit" green={false} style2={styles.but2} disabled={submitting}>SUBMIT</Button>
                     </div>
                 </form>
