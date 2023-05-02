@@ -34,6 +34,9 @@
 // }
 
 import nodemailer from "nodemailer";
+import axios from 'axios'
+
+
 
 // Set a cooldown period of 30 seconds between each email submission
 const COOLDOWN_PERIOD = 30000;
@@ -42,6 +45,21 @@ let lastSubmitTime = 0;
 export default async function handler(req, res) {
   const { fname, lname, email, message, subject } = req.body;
   console.log(fname, lname, email, message);
+
+//   // Get the number of emails sent by your Sendinblue account
+// 	const { data } = await axios.get('https://api.sendinblue.com/v3/smtp/statistics', {
+// 		headers: {
+// 		'Content-Type': 'application/json',
+// 		'api-key': process.env.NEXT_PUBLIC_SENDBLUE_KEY,
+// 		},
+// 	});
+  
+//   console.log(data.month.emailSent)
+  
+//   // Check if the limit of 300 emails has been reached
+//   if (data.month.emailSent >= 300) {
+// 	return res.status(429).json({ message: 'The email limit has been reached. Please try again later.' });
+//   }
 
   // Check if the cooldown period has elapsed since the last submission
   const currentTime = Date.now();

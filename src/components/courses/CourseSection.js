@@ -35,6 +35,22 @@ export default function CourseSection() {
         </div>
         <div className={styles.cardBox}>
           <div className={styles.cardHeader}>
+            <p>CPNRE/REX - PN</p>
+          </div>
+          <CourseCard src="/images/Rex-Pn.png" imageStyle={styles.cardImage}>
+            <p className={styles.paragraph}>
+              The REx-PN is a new Canadian Practical Nurse exam developed for
+              the British Columbia College of Nurses and Midwives (BCCNM) and
+              the College of Nurses of Ontario (CNO). BCCNM and CNO have
+              partnered with NCSBN to develop the REx-PN. NCSBN is dedicated to
+              developing psychometrically sound and legally defensible nurse
+              licensure and certification examinations consistent with current
+              practice..
+            </p>
+          </CourseCard>
+        </div>
+        <div className={styles.cardBox}>
+          <div className={styles.cardHeader}>
             <p>NCLEX - RN</p>
           </div>
           <CourseCard src="/images/nclex.png" imageStyle={styles.cardImage}>

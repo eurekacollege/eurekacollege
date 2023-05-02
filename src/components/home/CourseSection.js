@@ -63,6 +63,7 @@ export default function CourseSection() {
           <ul>
             <li>CELBAN</li>
             <li>NCAS-RN</li>
+            <li>CPNRE/REX-PN</li>
             <li>NCLEX-RN</li>
           </ul>
         </CourseCard>

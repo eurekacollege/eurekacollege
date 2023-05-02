@@ -104,13 +104,13 @@ export default function About() {
           <p className={styles.title}>MEET THE TEAM</p>
           <div className={styles.imgContainer}>
             <div>
-              <Image src="/images/archi.jpg" alt="Photo" width={70} height={80}/>
-              <p>Archimedes Sinlao</p>
+              <Image src="/images/archisinlao.png" alt="Photo" width={70} height={80}/>
+              <p className={styles.name}>Archimedes Sinlao</p>
               <p>Founder, Owner</p>
             </div>
             <div>
-              <Image src="/images/marilee.jpg" alt="Photo" width={70} height={80}/>
-              <p>Marilee Dela Cruz Sinlao</p>
+              <Image src="/images/marilee.png" alt="Photo" width={70} height={80}/>
+              <p className={styles.name}>Marilee Dela Cruz Sinlao</p>
               <p>CEO, Co-owner</p>
             </div>
           </div>
