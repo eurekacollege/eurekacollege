@@ -8,12 +8,61 @@
 .success
     // background-color: light
     color: green
-    font-weight: bold
-    font-size: 2rem
+    // font-weight: bold
+    // font-size: 2rem
 .error 
     // background-color: red
     color: red
-    font-weight: bold
-    font-size: 2rem
+    // font-weight: bold
 
+
+@include phone
+    .error
+        font-size: 4vw
+    .success
+        font-size: 4vw
+
+@include large-phone
+    .error
+        font-size: 3vw
+    .success
+        font-size: 3vw
     
+@include tablet
+    .error
+        font-size: 2vw
+    .success
+        font-size: 2vw
+
+@include laptop
+    .error
+        font-size: 2vw
+    .success
+        font-size: 2vw
+
+@include desktop
+    .error
+        font-size: 2vw
+    .success
+        font-size: 2vw
+
+@include large
+    .error
+        font-size: 2vw
+    .success
+        font-size: 2vw
+    
+
+@include extra-large
+    .error
+        font-size: 1.5vw
+    .success
+        font-size: 1.5vw
+
+@include extra-extra-large
+    .error
+        font-size: 1.5vw
+    .success
+        font-size: 1.5vw
+
+
