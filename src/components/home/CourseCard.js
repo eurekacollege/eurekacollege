@@ -11,8 +11,8 @@ export default function CourseCard({children, src, children2, href, button, imag
                 <Image
                 className={imageStyle}
                 src={src}
-                width={200}
-                height={200}
+                width={3000}
+                height={3000}
                 alt="Image"
                 />
             </div>
