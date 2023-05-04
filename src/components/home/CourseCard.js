@@ -3,7 +3,7 @@ import Image from "next/image";
 import Button from "@/components/Button"
 import Link from "next/link"
 
-export default function CourseCard({children, src, children2, href, button, imageStyle, buttonStyle}) {
+export default function CourseCard({children, src, children2, href, button, imageStyle, buttonStyle, size}) {
   return (
         <div className={styles.cardContainer}>
           <div className={styles.card}>
@@ -11,8 +11,8 @@ export default function CourseCard({children, src, children2, href, button, imag
                 <Image
                 className={imageStyle}
                 src={src}
-                width={3000}
-                height={3000}
+                width={1500}
+                height={200}
                 alt="Image"
                 />
             </div>
