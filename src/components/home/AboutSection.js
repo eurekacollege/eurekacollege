@@ -36,7 +36,7 @@ export default function AboutSection() {
         <Link href="https://fnrc.ca/" target="_blank" rel="noopener noreferrer" className={styles.link2}>Learn More</Link>
       </div>
       <div className={styles.videoContainer}>
-        <video src="/images/blinkingeyes.mp4" width={500} height={500} alt="image" autoPlay loop/>
+        <video src="/images/blinkingeyes.mp4" width={1500} height={1500} alt="image" autoPlay loop/>
       </div>
     </div>
   );
