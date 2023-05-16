@@ -69,14 +69,14 @@ export default function Navigation() {
                 IENs PREPARATION COURSES
               </Nav.Link>
             </Nav.Item>
-            <Nav.Item className={`${styles.customNavItem}`}>
+            {/* <Nav.Item className={`${styles.customNavItem}`}>
               <Nav.Link
                 className={`${styles.customNavLink} text-no-wrap`}
                 href="/courses#certificate"
               >
                 CERTIFICATION COURSES
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
             <Nav.Item className={`${styles.customNavItem}`}>
               <Nav.Link
                 className={`${styles.customNavLink} text-no-wrap`}
