@@ -4,7 +4,7 @@ import styles from "@/styles/home/CourseSection.module.sass";
 export default function CourseSection() {
   return (
     <div className={styles.container}>
-      <div className={styles.cardBox}>
+      {/* <div className={styles.cardBox}>
         <div className={styles.cardHeader}>
           <p>CERTIFICATION COURSES</p>
         </div>
@@ -35,7 +35,7 @@ export default function CourseSection() {
             <li>More Courses Soon - Medical Office Administrator and ESL Courses</li>
           </ul>
         </CourseCard>
-      </div>
+      </div> */}
       <div className={styles.cardBox}>
         <div className={styles.cardHeader}>
           <p>IENs PREPARATION COURSES</p>
