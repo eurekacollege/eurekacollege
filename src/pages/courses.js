@@ -12,7 +12,7 @@ export default function Courses() {
       <CourseHeadliner />
       <Header style={styles.header} tag="iens">IENs PREPARATION COURSES</Header>
       <CourseSection />
-      <Header style={styles.header} tag="certificate">CERTIFICATION COURSES</Header>
+      {/* <Header style={styles.header} tag="certificate">CERTIFICATION COURSES</Header>
       <div className={styles.certContainer}>
         <p>DEMENTIA CERTIFICATE</p>
         <p>PALLIATIVE CERTIFICATE</p>
@@ -24,7 +24,7 @@ export default function Courses() {
           courses.
         </p>
         <p className={styles.certContact1}>Call us today at 604 721 9159</p>
-      </div>
+      </div> */}
       <Footer />
     </>
   );
