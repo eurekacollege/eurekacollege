@@ -15,7 +15,7 @@ export default function UnderConstruction() {
   }, [isMobile]);
 
   return (
-    <div className={styles.videoContainer}>
+    <div>
         <video className={styles.pic} src={videoSrc} width={1500} height={1500} alt="image" autoPlay loop/>
     </div>
   );
