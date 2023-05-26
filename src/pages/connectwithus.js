@@ -238,3 +238,20 @@ export default function ConnectWithUs() {
         </>
     )
 }
+
+export async function getServerSideProps(context) {
+    const isUnderConstruction = true;
+  
+    if (isUnderConstruction) {
+      return {
+        redirect: {
+          destination: "/underconstruction",
+          permanent: false,
+        },
+      };
+    }
+  
+    return {
+      props: {}, // You can pass additional props here if needed
+    };
+  }
