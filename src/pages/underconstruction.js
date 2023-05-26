@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
-import styles from '@/styles/UnderConstruction/UnderConstruction.module.sass';
+import styles from '@/styles/underconstruction/UnderConstruction.module.sass';
 
 export default function UnderConstruction() {
   const isMobile = useMediaQuery({ maxWidth: 768 }); // Set your desired breakpoint for mobile devices
